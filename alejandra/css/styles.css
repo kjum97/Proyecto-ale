@@ -1,0 +1,148 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit
+}
+
+ /*GLOBALES*/
+ .contenedor{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+
+ .centrar-texto{
+    text-align: center;
+   }
+
+ .seccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .no-margin{
+     margin: 0px;
+ }
+
+/*Header*/
+.site-header{
+    background-color: #cf3482e3; 
+    padding: 10px 0 15px 0;
+  }
+
+  .site-header.inicio{
+      background-image: url(../img/header1.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      min-height: 600px;
+  }
+
+  .separacion{
+    margin-top: 40px;
+  }
+
+  .barra{
+      padding-top: 20px;
+      text-align: center;
+      
+  }
+
+  @media(min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  /*NAVEGACION*/
+  .navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    margin-top: 10px;
+    padding-top: 2px;
+  }
+
+  .navegacion a:hover{
+    color:mediumorchid;
+}
+
+  @media(min-width:768px){
+    .navegacion a{
+          display: inline-block;
+          margin-right: 20px;
+          font-size: 22px;
+      }
+
+    .navegacion a:last-of-type{
+        margin: 0;
+    }
+    .navegacion a:hover{
+            color:mediumorchid;
+    }
+  }
+
+/****MOBIL MENU****/
+.mobile-menu img{
+    width: 50px;
+}
+
+@media(min-width:768px){
+  .mobile-menu{
+      display: none;
+  }
+}
+
+.navegacion:target{
+  display: block;
+}
+
+.navegacion{
+  display: none;
+}
+
+@media(min-width:768px){
+  .navegacion{
+      display: block;
+  }   
+}
+
+/****Texto-HEADER***/
+
+.texto-header{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 4.5rem;
+}
+
+.texto-header h2{
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.texto-header p{
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+
+@media(min-width:786px){
+  .texto-header{
+      margin-top: 15rem;
+  }
+
+  .texto-header p{
+    font-size: 2.2rem;
+  }
+
+  .texto-header h2{
+    font-size: 2.5rem;
+  }
+}
+
+/****ASIDE NOVEDADES****/
+
