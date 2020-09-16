@@ -1,5 +1,5 @@
 :root{ 
-  --primario: #89119D;
+  --primario: skyblue;
   --secundario: white;
   --fuenteprincipal:'Dancing Script', cursive;
   --fuentesecundaria:'PT Sans', sans-serif;
@@ -44,7 +44,7 @@ body{
 
 /*Header*/
 .site-header{
-    background-color: #cf3482e3; 
+    background-color: #49d5ffe3; 
     padding: 10px 0 15px 0;
   }
 
@@ -86,7 +86,7 @@ body{
   }
 
   .navegacion a:hover{
-    color:mediumorchid;
+    color:skyblue;
 }
 
   @media(min-width:768px){
@@ -100,7 +100,7 @@ body{
         margin: 0;
     }
     .navegacion a:hover{
-            color:mediumorchid;
+            color:skyblue;
     }
   }
 
