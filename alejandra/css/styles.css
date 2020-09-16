@@ -1,8 +1,21 @@
+:root{ 
+  --primario: #89119D;
+  --secundario: white;
+  --fuenteprincipal:'Dancing Script', cursive;
+  --fuentesecundaria:'PT Sans', sans-serif;
+}
+
 html{
     box-sizing: border-box;
-}
+      font-size: 62.5%;
+  }
 *, *:before, *:after{
     box-sizing: inherit
+}
+
+body{
+  background-color: var(--primario);
+  font-family: var(--fuentesecundaria);
 }
 
  /*GLOBALES*/
@@ -23,6 +36,10 @@ html{
 
  .no-margin{
      margin: 0px;
+ }
+
+ img{
+   max-width: 100%;
  }
 
 /*Header*/
@@ -121,13 +138,13 @@ html{
 }
 
 .texto-header h2{
-  font-size: 2rem;
+  font-size: 3.2rem;
   line-height: 1;
 }
 
 .texto-header p{
-  font-size: 1.6rem;
-  margin-top: 5px;
+  font-size: 2.5rem;
+  margin-top: 8px;
 }
 
 @media(min-width:786px){
@@ -136,13 +153,122 @@ html{
   }
 
   .texto-header p{
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 
   .texto-header h2{
-    font-size: 2.5rem;
+    font-size: 3.4rem;
   }
 }
 
 /****ASIDE NOVEDADES****/
+
+@media(min-width:786px){
+  .novedades{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+aside h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-family: var(--fuenteprincipal)
+}
+
+.ofertas{
+  background-color: var(--secundario);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+@media(min-width:786px){
+  .ofertas{
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+.descuento{
+  color: var(--primario);
+  font-family: var(--fuenteprincipal);
+  font-size: 3.8rem;
+  text-align: center;
+  margin: 0px 10px;
+  padding-top: 8px;
+}
+
+@media(min-width:786px){
+  .descuento{
+    font-size: 4.2rem;
+  }
+}
+
+.texto-descuento{
+  color: #000000;
+  font-size: 2rem;
+  text-align: justify;
+  margin: 5px 8px;
+  padding-bottom: 20px;
+  line-height: 2;
+}
+
+.texto-descuento span{
+  color: var(--primario);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.texto-imagen img{
+  padding-top:8px; 
+  padding-right:5px; 
+  padding-left:10px; 
+  padding-bottom: 0px;
+}
+
+.texto-imagen p{
+  font-size: 2rem;
+  text-align: justify;
+  padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 20px;
+  line-height: 2;
+}
+
+.texto-imagen img{
+  padding-top:8px; 
+  padding-right:10px; 
+  padding-left:40px; 
+  padding-bottom: 0px;
+}
+
+@media(min-width:786px){
+.texto-imagen{
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-imagen img{
+  padding-top:8px; 
+  padding-right:5px; 
+  padding-left:10px; 
+  padding-bottom: 0px;
+  display: inline-block;
+  height: 200px;
+  width: 600px;
+}
+}
+
+.productoNuevo h2{
+  font-size: 3.8rem;
+  color: var(--primario);
+  font-family: var(--fuenteprincipal);
+  margin: 0px 10px;
+  padding-top: 8px;
+}
+
+@media(min-width:786px){
+  .productoNuevo h2{
+    font-size: 4.2rem;
+  }
+}
 
