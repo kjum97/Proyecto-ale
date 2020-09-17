@@ -42,6 +42,35 @@ body{
    max-width: 100%;
  }
 
+ /****BOTONES****/
+.btn{
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'PT sans', sans-serif;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  margin: 0rem 0rem 2rem 0rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  flex: 0 0 100%;
+}
+.btn:hover{
+  cursor: pointer;
+}
+@media(min-width:768px){
+  .btn{
+      display: inline-block;
+      flex: 0 0 auto;
+  }
+}
+
+.btn-primario{
+  background-color: skyblue;
+}
+
 /*Header*/
 .site-header{
     background-color: #49d5ffe3; 
@@ -174,7 +203,7 @@ aside h2{
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: var(--fuenteprincipal)
 }
 
@@ -270,5 +299,49 @@ aside h2{
   .productoNuevo h2{
     font-size: 4.2rem;
   }
+}
+
+/*INFORMACION DEL MAPA*/
+
+.informacion{
+  background-color: var(--secundario);
+  margin-bottom: 10px;
+}
+.encabezado-info{
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: var(--fuenteprincipal);
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.encabezado-info span{
+  display: block;
+  font-size: 3.8rem;
+  font-family: var(--fuenteprincipal);
+  font-weight: bold;
+  color: skyblue;
+}
+
+@media(min-width:786px){
+.encabezado-info{
+ text-align: left;
+}
+
+.encabezado-info span{
+ text-align: left;
+ margin: 0px 0px 0px 50px;
+}
+}
+
+.texto-info{
+  font-size: 2rem;
+  text-align: justify;
+  padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 0px;
+  line-height: 2;
 }
 
