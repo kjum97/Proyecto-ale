@@ -87,6 +87,10 @@ body{
   justify-content: flex-end;
 }
 
+.d-block{
+  display: block!important;
+}
+
 /*Header*/
 .site-header{
     background-color: #49d5ffe3; 
@@ -395,3 +399,48 @@ main h2{
 }
 }
 
+.contenido-diseño{
+  padding: 20px 20px 10px 20px;
+}
+
+.contenido-diseño h3{
+  margin: 0px;
+  font-size: 1.8rem;
+}
+
+.contenido-diseño p{
+  margin: 10px 0px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.precio{
+  color: var(--primario);
+  font-weight: bold;
+}
+
+.iconos-caracteristicas{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 500px;
+  flex:1;
+}
+
+.iconos-caracteristicas li{
+  display: flex;
+}
+
+.iconos-caracteristicas li p{
+  margin-right: 15px;
+  font-size: 1.8rem;
+}
+
+.iconos-caracteristicas li p i{
+  color: skyblue;
+  font-size: 1.8rem;
+}
+
+/*****CONTACTO*****/
