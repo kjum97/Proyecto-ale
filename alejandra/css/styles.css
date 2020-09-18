@@ -43,6 +43,11 @@ body{
    max-width: 100%;
  }
 
+ .separacion{
+  margin-top: 40px;
+}
+
+
  /****BOTONES****/
 .btn{
   display: block;
@@ -72,6 +77,16 @@ body{
   background-color: skyblue;
 }
 
+.btn-secundario{
+  background-color: white;
+  color: #000000;
+}
+
+.ver-todos{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*Header*/
 .site-header{
     background-color: #49d5ffe3; 
@@ -85,10 +100,6 @@ body{
       background-repeat: no-repeat;
       height: 100vh;
       min-height: 600px;
-  }
-
-  .separacion{
-    margin-top: 40px;
   }
 
   .barra{
@@ -204,7 +215,7 @@ aside h2{
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-family: var(--fuenteprincipal)
 }
 
@@ -344,5 +355,43 @@ aside h2{
   text-align: justify;
   padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 0px;
   line-height: 2;
+}
+
+/****MAIN DISEÑOS****/
+
+main h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--fuenteprincipal);
+  margin-top: 0px;
+}
+
+@media(min-width:768px){
+  .contenedor-diseños{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.diseños{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  background: #F5F5F5;
+  margin-bottom: 20px;
+}
+
+.diseños img{
+  display: inline-block;
+  height: 450px;
+  width: 450px;
+}
+
+@media(min-width:768px){
+  .diseños{
+      flex-basis: calc(33.3% - 1rem);
+}
 }
 
