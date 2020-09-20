@@ -21,7 +21,7 @@ body{
  /*GLOBALES*/
  .contenedor{
     width: 95%;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
    }
 
@@ -386,6 +386,13 @@ main h2{
   background: #F5F5F5;
   margin-bottom: 20px;
 }
+@media(min-width:768px){
+.diseños:hover{
+  transform: scale(1.2);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666;
+}
+}
 
 .diseños img{
   display: inline-block;
@@ -395,7 +402,7 @@ main h2{
 
 @media(min-width:768px){
   .diseños{
-      flex-basis: calc(33.3% - 1rem);
+      flex-basis: calc(33.3% - 1.2rem);
 }
 }
 
@@ -444,3 +451,26 @@ main h2{
 }
 
 /*****CONTACTO*****/
+.imagen-contacto{
+  background-image: url(../img/imagen\ contacto.png);
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.contenido-contacto{
+  flex: 0 0 95%;
+  color: #ffffff;
+}
+.contenido-contacto p{
+  font-size: 2rem;
+  font-family: var(--fuentesecundaria);
+  line-height: 2;
+}
+.contenido-contacto h2{
+  font-size: 2.6rem;
+  font-family: var(--fuentesecundaria);
+}
+
