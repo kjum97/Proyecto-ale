@@ -389,7 +389,7 @@ main h2{
 @media(min-width:768px){
 .diseños:hover{
   transform: scale(1.2);
-  border: 1px solid #fe4918;
+  border: 2px solid var(--primario);
   box-shadow: 0px 0px 50px #666;
 }
 }
@@ -402,7 +402,7 @@ main h2{
 
 @media(min-width:768px){
   .diseños{
-      flex-basis: calc(33.3% - 1.2rem);
+      flex-basis: calc(33.3% - 1.8rem);
 }
 }
 
@@ -474,3 +474,144 @@ main h2{
   font-family: var(--fuentesecundaria);
 }
 
+/****TESTIMONIALES*****/
+section h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--fuenteprincipal);
+  margin-top: 0px;
+}
+
+@media(min-width:768px){
+  .testimoniales{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.testimonial{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  background: #F5F5F5;
+  margin-bottom: 20px;
+}
+
+.testimonial p{
+  font-size: 2rem;
+  font-family: var(--fuentesecundaria);
+  line-height: 2;
+  padding: 0px 20px 0px 20px;
+  margin:0px 0px;
+}
+.testimonial img{
+    display: inline-block;
+    height: 500px;
+    width: 550px; 
+}
+
+.usuario{
+  display: flex;
+  justify-content: center;
+  background-color:black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.usuario img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.usuario h3{
+  color: var(--primario);
+  font-size: 2rem;
+  font-family: var(--fuentesecundaria);
+  text-align: center;
+  padding: 8px 0px;
+}
+
+/****FOOTER****/
+.site-footer{
+  background-color: #353535;
+  padding-top: 10px;
+  margin-bottom:0px;
+}
+.contenido-footer{
+  text-align: center;
+}
+@media(min-width:768px){
+  .contenido-footer{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+  .propietaria h3{
+    text-transform: uppercase;
+    color:var(--secundario);
+    font-size: 2.4rem;
+    font-family: var(--fuentesecundaria);
+    margin-top: 20px;
+  }
+  .propietaria h3 span{
+    color: var(--primario);
+  }
+  .propietaria p{
+    color: white;
+    font-size: 2rem;
+    font-family: var(--fuentesecundaria);
+  }
+  @media(min-width:768px){
+    .propietaria p{
+      text-align: center;
+    }
+  }
+  
+.redes-sociales h2{
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--fuentesecundaria);
+}
+.redes-sociales h2 span{
+  color: var(--primario);
+}
+
+footer .redes a{
+  font-size: 30px;
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+
+.copyright{
+  background-color: #2e2e2e;
+  color: white;
+  padding: 10px 0px;
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/*Color a iconos redes sociales*/
+.face{
+  color: rgb(60, 60, 204);
+}
+.twi{
+  color: skyblue;
+}
+.ins{
+  color: palevioletred;
+}
+.wha{
+  color: green;
+}
