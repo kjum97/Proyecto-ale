@@ -47,6 +47,11 @@ body{
   margin-top: 40px;
 }
 
+.clearfix::after{
+  content:'';
+  clear: both;
+  display: block;
+}
 
  /****BOTONES****/
 .btn{
@@ -93,7 +98,7 @@ body{
 
 /*Header*/
 .site-header{
-    background-color: #49d5ffe3; 
+    background-color: #000000e3; 
     padding: 10px 0 15px 0;
   }
 
@@ -107,16 +112,15 @@ body{
   }
 
   .barra{
-      padding-top: 20px;
+      padding-top: 15px;
       text-align: center;
-      
   }
 
   @media(min-width:768px){
     .barra{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
   }
 
@@ -127,6 +131,7 @@ body{
     font-size: 22px;
     display: block;
     margin-top: 10px;
+    margin-bottom: 15px;
     padding-top: 2px;
   }
 
@@ -327,7 +332,7 @@ aside h2{
   text-align: center;
   text-transform: uppercase;
   color: black;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   font-family: var(--fuenteprincipal);
   padding-top: 30px;
@@ -337,7 +342,7 @@ aside h2{
 
 .encabezado-info span{
   display: block;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   font-family: var(--fuenteprincipal);
   font-weight: bold;
   color: skyblue;
@@ -346,11 +351,13 @@ aside h2{
 @media(min-width:786px){
 .encabezado-info{
  text-align: left;
+ font-size: 5rem;
 }
 
 .encabezado-info span{
  text-align: left;
  margin: 0px 0px 0px 50px;
+ font-size: 3.8rem;
 }
 }
 
@@ -472,6 +479,7 @@ main h2{
 .contenido-contacto h2{
   font-size: 2.6rem;
   font-family: var(--fuentesecundaria);
+  text-align: left;
 }
 
 /****TESTIMONIALES*****/
@@ -602,7 +610,7 @@ footer .redes a{
   font-size: 1.8rem;
 }
 
-/*Color a iconos redes sociales*/
+/*"Color a iconos redes sociales*/
 .face{
   color: rgb(60, 60, 204);
 }
@@ -614,4 +622,104 @@ footer .redes a{
 }
 .wha{
   color: green;
+}
+
+/****PAGINA INFORMACION, QUE ES MAPA ESTELAR****/
+.pagina2 .barra{
+  padding-top: 0px;
+  margin: 0px;
+}
+.barra a{
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.barra a h1{
+  font-size: 3rem;
+  font-family: var(--fuenteprincipal);
+  color: white;
+  margin-top: 35px;
+}
+.barra a h1 span{
+  color: var(--primario);
+}
+
+main .contenedor{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+main .contenedor p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .informacion{
+  border: 2px solid skyblue;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
+  -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
+  box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
+}
+main .encabezado-info{
+  margin-left: 12px;
+}
+
+.constelacion .texto-info{
+  margin-top: 0px;
+}
+
+.informacion img{
+  width: 100%;
+}
+@media(min-width:786px){
+  .informacion img{
+      display: block;
+      width: 300px;
+      float: left;
+      margin: 10px 10px 0 0;
+      padding: 0px 10px;
+  }
+}
+
+.informacion ul{
+  padding-left: 50px;
+}
+.informacion ul li{
+  font-size: 2rem;
+  line-height: 2;
+  text-align: justify;
+  padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 0px;
+}
+@media(min-width:786px){
+  .informacion ul{
+    padding-left: 100px;
+  }
+}
+
+.qr .texto-info{
+  margin-top: 0px;
+}
+.qr img{
+  width: 100%;
+}
+@media(min-width:786px){
+  .qr img{
+    display: block;
+    width: 300px;
+    height: 190px;
+  }
+}
+
+.img-spotify .texto-info{
+  margin-top: 0px;
+}
+.img-spotify img{
+width: 100%;
+}
+@media(min-width:786px){
+  .img-spotify img{
+    display: block;
+    width: 310px;
+    height: 140px;
+  }
 }
