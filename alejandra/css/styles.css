@@ -568,8 +568,8 @@ section h2{
 .testimonial p{
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
-  line-height: 2;
-  padding: 0px 20px 0px 20px;
+  line-height: 1.6;
+  padding: 0px 12px 0px 12px;
   margin:0px 0px;
 }
 .testimonial img{
