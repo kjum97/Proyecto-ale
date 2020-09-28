@@ -247,6 +247,12 @@ body{
   color: coral;
 }
 
+@media(min-width:786px){
+  .productoNuevo .descuento{
+    padding: 50px 0px 0px 0px;
+  }
+}
+
 .descuento{
   color: var(--primario);
   font-family: var(--fuenteprincipal);
@@ -263,17 +269,24 @@ body{
     font-size: 4.2rem;
   }
 }
+
 .texto-descuento{
   color:white;
   font-size: 7rem;
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 95px;
+  margin-left: 155px;
   background-color: red;
   border-radius: 90%;
   padding: 15px 3px;
 }
+@media(min-width:786px){
+  .texto-descuento{
+    margin-left: 95px;
+  }
+}
+
 .texto-descuento2{
   margin: 10px 8px 0px 8px;
   color: black;
@@ -288,9 +301,20 @@ body{
 }
 
 .btn-cupon{
-  margin: 10px 5px;
   text-align: center;
-  padding-bottom: 5px;
+  margin: 20px 7px;
+}
+.btn-cupon a{
+  display: inline;
+}
+@media(min-width:768px){
+  .btn-cupon a{
+    display: block;
+  }
+  .btn-cupon{
+    margin: 10px 5px;
+    padding-bottom: 5px;
+  }
 }
 .btn-cupon a{
   border-radius: 50%;
@@ -315,10 +339,13 @@ body{
 
 @media(min-width:768px){
   .img-nueva img{
-    height: 420px;
+    height: 350px;
     margin-top: 10px;
     width: 100%;
     padding: 0px 5px;
+  }
+  .img-nueva p{
+    margin-bottom: 50px;
   }
   .texto-imagen{
     display: flex;
@@ -573,7 +600,7 @@ section h2{
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
   text-align: center;
-  padding: 8px 0px;
+  padding: 8px 5px 8px 0px;
 }
 
 /****FOOTER****/
@@ -820,9 +847,15 @@ width: 100%;
 .texto-nosotros blockquote{
   font-weight: 900;
   font-size: 2.3rem;
-  margin: 0;
+  margin: 15px 0px 0px 0px;
   text-align: center;
 }
+@media(min-width:786px){
+  .texto-nosotros blockquote{
+    margin: 0px;
+  }
+}
+
 .texto-nosotros p{
   font-size: 1.9rem;
   text-align: justify;
@@ -831,7 +864,7 @@ width: 100%;
 
 /*PAGINA TESTIMONIALES*/
 main .testimonial img{
-  height: 350px;
+  height: 330px;
   }
 main .usuario img{
   width: 40px;
@@ -845,7 +878,7 @@ main .usuario img{
     column-gap: 1rem;
   }
   main .testimonial img{
-    height: 350px;
+    height: 330px;
   }
   main .usuario img{
     width: 40px;
@@ -858,7 +891,7 @@ main .usuario img{
     grid-template-columns: repeat(3, 1fr);
   }
   main .testimonial img{
-    height: 350px;
+    height: 330px;
   }
   main .usuario img{
     width: 40px;
@@ -871,7 +904,7 @@ main .usuario img{
       grid-template-columns: repeat(4, 1fr);
     }
     main .testimonial img{
-      height: 350px;
+      height: 330px;
     }
     main .usuario img{
       width: 40px;
