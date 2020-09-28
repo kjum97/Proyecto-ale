@@ -237,6 +237,16 @@ body{
   margin-bottom: 5px;
 }
 
+.cupon{
+  border:5px dotted coral;;
+}
+.cupon .descuento{
+  color: coral;
+}
+.cupon .texto-descuento2 span{
+  color: coral;
+}
+
 .descuento{
   color: var(--primario);
   font-family: var(--fuenteprincipal);
@@ -254,11 +264,15 @@ body{
   }
 }
 .texto-descuento{
-  color:red;
+  color:white;
   font-size: 7rem;
-  text-align: center;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 95px;
+  background-color: red;
+  border-radius: 90%;
+  padding: 15px 3px;
 }
 .texto-descuento2{
   margin: 10px 8px 0px 8px;
@@ -278,7 +292,11 @@ body{
   text-align: center;
   padding-bottom: 5px;
 }
-
+.btn-cupon a{
+  border-radius: 50%;
+  background-color: coral;
+  color: white;
+}
 .img-nueva img{
   display: inline-block;
   height: 450px;
@@ -297,8 +315,10 @@ body{
 
 @media(min-width:768px){
   .img-nueva img{
-    height: 520px;
+    height: 420px;
     margin-top: 10px;
+    width: 100%;
+    padding: 0px 5px;
   }
   .texto-imagen{
     display: flex;
@@ -312,8 +332,17 @@ body{
       grid-template-columns: 30% 70%;
       column-gap: 2rem;
     }
+    aside{
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    article{
+      grid-column: 1/2;
+    }
   }
 
+  
 /*INFORMACION DEL MAPA*/
 
 .informacion{
@@ -404,7 +433,6 @@ main h2{
   .diseños{
       flex: 0 0 calc(33.3% - 1.8rem);
 }
-
 .diseños img{
   display: inline-block;
   height: 350px;
@@ -431,6 +459,9 @@ main h2{
 .precio{
   color: var(--primario);
   font-weight: bold;
+}
+.precio span{
+  color: black;
 }
 
 .iconos-caracteristicas{
@@ -493,8 +524,9 @@ section h2{
 
 @media(min-width:768px){
   .testimoniales{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4.6rem;
   }
 }
 
@@ -797,5 +829,58 @@ width: 100%;
   line-height: 1.8;
 }
 
-/*PAGINA DISEÑOS*/
+/*PAGINA TESTIMONIALES*/
+main .testimonial img{
+  height: 350px;
+  }
+main .usuario img{
+  width: 40px;
+  height: 40px;
+  }
+
+@media(min-width:580px){
+  main .testimoniales{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  main .testimonial img{
+    height: 350px;
+  }
+  main .usuario img{
+    width: 40px;
+    height: 40px;
+    }
+}
+
+@media(min-width:768px){
+  main .testimoniales{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .testimonial img{
+    height: 350px;
+  }
+  main .usuario img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media(min-width:992px){
+    main .testimoniales{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    main .testimonial img{
+      height: 350px;
+    }
+    main .usuario img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
+
+
+
 
