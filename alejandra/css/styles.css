@@ -272,35 +272,30 @@ body{
 
 .texto-descuento{
   color:white;
-  font-size: 7rem;
+  font-size: 6rem;
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 120px;
+  margin-left: 130px;
   background-color: red;
   border-radius: 90%;
   padding: 15px 3px;
 }
 @media(min-width:480px){
   .texto-descuento{
-    margin-left: 30px;
-    font-size: 5rem;
-    text-align: left;
+    margin-left: 290px;
   }
 }
 @media(min-width:768px){
   .texto-descuento{
-    margin-left: 50px;
+    margin-left: 55px;
+    font-size: 5rem;
   }
 }
-@media(min-width:1024px){
+@media(min-width:992px){
   .texto-descuento{
     margin-left: 100px;
-  }
-}
-@media(min-width:1100px){
-  .texto-descuento{
-    margin-left: 120px;
+    font-size: 6rem;
   }
 }
 
