@@ -841,6 +841,10 @@ width: 100%;
 }
 
 /*PAGINA NOSOTROS*/
+.img-nosotros img{
+  height: 450px;
+  width: 100%;
+}
 @media(min-width:786px){
   .contenido-nosotros{
     display: flex;
@@ -852,7 +856,7 @@ width: 100%;
 
   .img-nosotros img{
     display: inline-block;
-    height: 600px;
+    height: 750px;
     width: 600px;
   }
 }
