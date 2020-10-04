@@ -850,14 +850,17 @@ width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  .espacio-flex{
-    flex-basis: calc(50% - 1rem);
+  .flex-img{
+    flex-basis:calc(35% - 1rem);
+  }
+  .flex-texto{
+    flex-basis: calc(65% - 1rem);
   }
 
   .img-nosotros img{
     display: inline-block;
-    height: 750px;
-    width: 600px;
+    height: 580px;
+   width: 500px;
   }
 }
 .texto-nosotros blockquote{
