@@ -882,6 +882,10 @@ width: 100%;
 }
 
 /*PAGINA TESTIMONIALES*/
+main .testimoniales{
+  display: flex;
+  flex-direction: column-reverse;
+}
 main .testimonial img{
   height: 330px;
   }
