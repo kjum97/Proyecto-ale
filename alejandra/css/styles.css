@@ -53,6 +53,15 @@ body{
   display: block;
 }
 
+h2{
+  margin-top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  font-family: var(--fuenteprincipal)
+}
+
  /****BOTONES****/
 .btn{
   display: block;
@@ -100,6 +109,7 @@ body{
 .site-header{
     background-color: #000000e3; 
     padding: 10px 0 15px 0;
+    margin-top: 0px;
   }
 
   .site-header.inicio{
@@ -154,30 +164,7 @@ body{
     }
   }
 
-/****MOBIL MENU****/
-.mobile-menu img{
-    width: 50px;
-}
 
-@media(min-width:768px){
-  .mobile-menu{
-      display: none;
-  }
-}
-
-.navegacion:target{
-  display: block;
-}
-
-.navegacion{
-  display: none;
-}
-
-@media(min-width:768px){
-  .navegacion{
-      display: block;
-  }   
-}
 
 /****Texto-HEADER***/
 
@@ -188,13 +175,15 @@ body{
 }
 
 .texto-header h2{
-  font-size: 3.2rem;
+  text-transform: unset;
+  font-size: 3.4rem;
   line-height: 1;
+  font-family: var(--fuentesecundaria);
 }
 
 .texto-header p{
   font-size: 2.5rem;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 @media(min-width:786px){
@@ -204,11 +193,10 @@ body{
 
   .texto-header p{
     font-size: 2.8rem;
+    margin-top: 10px;
   }
 
-  .texto-header h2{
-    font-size: 3.4rem;
-  }
+
 }
 
 /****intro***/
@@ -224,13 +212,7 @@ body{
 
 /****ASIDE NOVEDADES****/
 
-.novedades h2{
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.4rem;
-  font-family: var(--fuenteprincipal)
-}
+
 .ofertas{
   background-color: var(--secundario);
   border-radius: 5px;
@@ -430,15 +412,6 @@ body{
 
 /****MAIN DISEÑOS****/
 
-main h2{
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.4rem;
-  font-family: var(--fuenteprincipal);
-  margin-top: 0px;
-}
-
 @media(min-width:768px){
   .contenedor-diseños{
     display: flex;
@@ -482,12 +455,10 @@ main h2{
 .contenido-diseño{
   padding: 20px 20px 10px 20px;
 }
-
 .contenido-diseño h3{
   margin: 0px;
   font-size: 1.8rem;
 }
-
 .contenido-diseño p{
   margin: 10px 0px;
   font-size: 1.6rem;
@@ -552,14 +523,6 @@ main h2{
 }
 
 /****TESTIMONIALES*****/
-section h2{
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.4rem;
-  font-family: var(--fuenteprincipal);
-  margin-top: 0px;
-}
 
 @media(min-width:768px){
   .testimoniales{
@@ -650,16 +613,6 @@ section h2{
       text-align: center;
     }
   }
-  
-.redes-sociales h2{
-  text-transform: uppercase;
-  color: white;
-  font-size: 2.4rem;
-  font-family: var(--fuentesecundaria);
-}
-.redes-sociales h2 span{
-  color: var(--primario);
-}
 
 footer .redes a{
   font-size: 30px;
