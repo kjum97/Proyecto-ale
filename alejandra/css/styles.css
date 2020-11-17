@@ -122,8 +122,12 @@ h2{
   }
 
   .barra{
-      padding-top: 15px;
+      padding-top: 50px;
       text-align: center;
+  }
+  .barra img{
+    width: 100px;
+    height: 106px;
   }
 
   @media(min-width:768px){
@@ -131,6 +135,7 @@ h2{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        padding-top: 15px;
     }
   }
 
@@ -190,13 +195,10 @@ h2{
   .texto-header{
       margin-top: 15rem;
   }
-
   .texto-header p{
     font-size: 2.8rem;
     margin-top: 10px;
   }
-
-
 }
 
 /****intro***/
@@ -649,6 +651,9 @@ footer .redes a{
 
 /****PAGINA INFORMACION, QUE ES MAPA ESTELAR****/
 /*iconos nosotros*/
+.hide{
+display: none;
+}
 .icono{
   border: 1px solid white;
   border-radius: 5px;
@@ -670,6 +675,9 @@ footer .redes a{
   text-align: center;
   line-height: 1.6;
 }
+.iconos-nosotros{
+  display: none;
+}
 @media(min-width:768px){
   .icono{
     margin-bottom: 0px;
@@ -677,8 +685,11 @@ footer .redes a{
   .iconos-nosotros{
   display: flex;
   justify-content: space-between;
-  
 }
+
+.hide{
+  display: block;
+  }
 }
 .icono{
   text-align: center;
@@ -711,6 +722,15 @@ footer .redes a{
 }
 .barra a h1 span{
   color: var(--primario);
+}
+
+.blog{
+  margin-top: -50px;
+}
+@media(min-width:786px){
+  .blog{
+    margin-top: 0px;
+  }
 }
 
 main .contenedor{
