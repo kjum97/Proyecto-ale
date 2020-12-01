@@ -355,6 +355,9 @@ article{
   width: 100%;
   margin-top: 5px;
 }
+.img-nueva a{
+  text-decoration: none;
+}
 .img-nueva p{
   text-align: center;
   color: var(--primario);
@@ -563,7 +566,6 @@ article{
   background: #F5F5F5;
   margin-bottom: 20px;
 }
-
 .testimonial p{
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
@@ -680,11 +682,15 @@ footer .redes a{
   color: green;
 }
 
-/****PAGINA INFORMACION, QUE ES MAPA ESTELAR****/
-/*iconos nosotros*/
-.hide{
-display: none;
+/****PAGINA BLOG QUE ES MAPA ESTELAR****/
+/*COMBOS*/
+.combo ul li{
+  font-size: 20px;
+  font-family: var(--fuentesecundaria);
+  padding-top: 10px;
 }
+
+/*iconos nosotros*/
 .icono{
   border: 1px solid white;
   border-radius: 5px;
@@ -717,10 +723,6 @@ display: none;
   display: flex;
   justify-content: space-between;
 }
-
-.hide{
-  display: block;
-  }
 }
 .icono{
   text-align: center;
@@ -728,7 +730,7 @@ display: none;
 
 @media(min-width:768px){
   .icono{
-       flex-basis: calc(33.3% - 1rem);
+    flex-basis: calc(33.3% - 1rem);
   }
 }
 
@@ -753,15 +755,6 @@ display: none;
 }
 .barra a h1 span{
   color: var(--primario);
-}
-
-.blog{
-  margin-top: -50px;
-}
-@media(min-width:786px){
-  .blog{
-    margin-top: 0px;
-  }
 }
 
 main .contenedor{
@@ -876,7 +869,7 @@ width: 100%;
   .img-nosotros img{
     display: inline-block;
     height: 580px;
-   width: 500px;
+    width: 500px;
   }
 }
 .texto-nosotros blockquote{
