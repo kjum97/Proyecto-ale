@@ -277,7 +277,7 @@ article{
   padding-top: 8px;
   font-weight: bold;
   text-transform: uppercase;
-}
+} 
 @media(min-width:786px){
   .descuento{
     font-size: 4.2rem;
