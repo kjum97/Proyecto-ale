@@ -487,12 +487,14 @@ article{
   text-align: justify;
 }
 
-.precio{
+p.precio{
   color: var(--primario);
   font-weight: bold;
+  font-size: 20px;
 }
 .precio span{
   color: black;
+  font-size: 18px;
 }
 
 .iconos-caracteristicas{
