@@ -139,6 +139,26 @@ h2{
     }
   }
 
+  /*Barra de navegacion 2, la tienen las demas paginas del sitio web y es la barra negra con los enlaces y el nombre del emprendimiento*/
+  .pagina2 .barra{
+    padding-top: 0px;
+    margin: 0px;
+  }
+  .barra a{
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .barra a h1{
+    font-size: 3rem;
+    font-family: var(--fuenteprincipal);
+    color: white;
+    margin-top: 35px;
+  }
+  .barra a h1 span{
+    color: var(--primario);
+  }
+  
   /*NAVEGACION*/
   .navegacion a{
     color: white;
@@ -169,10 +189,7 @@ h2{
     }
   }
 
-
-
 /****Texto-HEADER***/
-
 .texto-header{
   text-align: center;
   color: #ffffff;
@@ -685,80 +702,6 @@ footer .redes a{
 }
 
 /****PAGINA BLOG QUE ES MAPA ESTELAR****/
-/*COMBOS*/
-.combo ul li{
-  font-size: 20px;
-  font-family: var(--fuentesecundaria);
-  padding-top: 10px;
-}
-
-/*iconos nosotros*/
-.icono{
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-bottom: 12px;
-}
-.icono img{
-  display: inline-block;
-  height: 100px;
-  width: auto;
-  padding-top: 10px;
-}
-.icono h3{
-  font-size: 2rem;
-  font-family: var(--fuentesecundaria);
-  font-weight: bold;
-}
-.icono p{
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 1.6;
-}
-.iconos-nosotros{
-  display: none;
-}
-@media(min-width:768px){
-  .icono{
-    margin-bottom: 0px;
-  }
-  .iconos-nosotros{
-  display: flex;
-  justify-content: space-between;
-}
-}
-.icono{
-  text-align: center;
-}
-
-@media(min-width:768px){
-  .icono{
-    flex-basis: calc(33.3% - 1rem);
-  }
-}
-
-.icono h3{
-  text-transform: uppercase;
-}
-
-.pagina2 .barra{
-  padding-top: 0px;
-  margin: 0px;
-}
-.barra a{
-  text-decoration: none;
-  margin-top: 0px;
-  margin-bottom: 15px;
-}
-.barra a h1{
-  font-size: 3rem;
-  font-family: var(--fuenteprincipal);
-  color: white;
-  margin-top: 35px;
-}
-.barra a h1 span{
-  color: var(--primario);
-}
-
 main .contenedor{
     width: 95%;
     max-width: 1000px;
@@ -891,6 +834,51 @@ width: 100%;
   text-align: justify;
   line-height: 1.8;
 }
+/*iconos nosotros*/
+.icono{
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.icono img{
+  display: inline-block;
+  height: 100px;
+  width: auto;
+  padding-top: 10px;
+}
+.icono h3{
+  font-size: 2rem;
+  font-family: var(--fuentesecundaria);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.icono p{
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.6;
+}
+.iconos-nosotros{
+  display: none;
+}
+@media(min-width:768px){
+  .icono{
+    margin-bottom: 0px;
+  }
+  .iconos-nosotros{
+  display: flex;
+  justify-content: space-between;
+}
+}
+.icono{
+  text-align: center;
+}
+
+@media(min-width:768px){
+  .icono{
+    flex-basis: calc(33.3% - 1rem);
+  }
+}
+
 
 /*PAGINA TESTIMONIALES*/
 main .testimoniales{
