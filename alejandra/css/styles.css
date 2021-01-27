@@ -44,7 +44,7 @@ body{
  }
 
  .separacion{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .clearfix::after{
@@ -146,18 +146,11 @@ h2{
   }
   .barra a{
     text-decoration: none;
-    margin-top: 0px;
-    margin-bottom: 15px;
   }
-  .barra a h1{
-    font-size: 3rem;
-    font-family: var(--fuenteprincipal);
-    color: white;
-    margin-top: 35px;
+  .barra a img{
+    margin-top: 10px;
   }
-  .barra a h1 span{
-    color: var(--primario);
-  }
+ 
   
   /*NAVEGACION*/
   .navegacion a{
