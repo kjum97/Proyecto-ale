@@ -283,47 +283,25 @@ article{
   font-family: var(--fuenteprincipal);
   font-size: 4rem;
   text-align: center;
-  margin: 0px 10px;
+  margin: 0px 10px 10px 10px;
   padding-top: 8px;
   font-weight: bold;
   text-transform: uppercase;
 } 
+.img-descuento{
+  background-color: white;
+}
 @media(min-width:786px){
-  .descuento{
+  .img-descuento{
+    background-color: black;
+  }
+  .img-descuento .descuento{
+    display: none;
     font-size: 4.2rem;
   }
 }
 
 .texto-descuento{
-  color:white;
-  font-size: 6rem;
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 130px;
-  background-color: red;
-  border-radius: 90%;
-  padding: 15px 3px;
-}
-@media(min-width:480px){
-  .texto-descuento{
-    margin-left: 290px;
-  }
-}
-@media(min-width:768px){
-  .texto-descuento{
-    margin-left: 55px;
-    font-size: 5rem;
-  }
-}
-@media(min-width:992px){
-  .texto-descuento{
-    margin-left: 100px;
-    font-size: 6rem;
-  }
-}
-
-.texto-descuento2{
   margin: 10px 8px 0px 8px;
   color: black;
   font-size: 2rem;
