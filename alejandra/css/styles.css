@@ -257,7 +257,7 @@ article{
 }
 
 .cupon{
-  border:5px dotted coral;
+  border:5px solid coral;
   margin-top: 10px;
 }
 @media(min-width: 768px){
@@ -300,6 +300,9 @@ article{
     font-size: 4.2rem;
   }
 }
+.img-descuento video{
+  width: 100%;
+}
 
 .texto-descuento{
   margin: 10px 8px 0px 8px;
@@ -308,8 +311,8 @@ article{
   text-align: center;
   line-height: 1.7;
 }
-.texto-descuento2 span{
-  color: var(--primario);
+.texto-descuento span{
+  color: coral;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -320,6 +323,10 @@ article{
 }
 .btn-cupon a{
   display: inline;
+  border-radius: 1%;
+  background-color: coral;
+  color: white;
+  margin-bottom: 5px;
 }
 @media(min-width:768px){
   .btn-cupon a{
@@ -329,11 +336,6 @@ article{
     margin: 10px 5px;
     padding-bottom: 5px;
   }
-}
-.btn-cupon a{
-  border-radius: 50%;
-  background-color: coral;
-  color: white;
 }
 
 /*Aside Novedades*/
