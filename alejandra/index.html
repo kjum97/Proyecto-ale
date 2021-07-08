@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Kitty</title>
     <link rel="icon" href="img/logotipo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -31,55 +34,49 @@
             </div>
 
             <div class="texto-header">
-                <h2 class="no-margin">Mapas Estelares Personalizados</h2>
-                <p class="no-margin">Plasma las estrellas que estuvieron en el cielo esa fecha especial y enmarca un momento importante.</p>
+                <h1 class="texto-header__titulo no-margin">Mapas Estelares Personalizados</h1>
+                <p class="texto-header__informacion no-margin">Plasma las estrellas que estuvieron en el cielo esa fecha especial y enmarca un momento importante.</p>
             </div>
         </div>
     </header>
 
-    <div class="novedades seccion">
+    <div class="seccion">
         <h2>Ofertas y Novedades</h2>
-        
         <div class="contenedor seccion sidebar">
-
-            <aside>
-                <div class="productoNuevo ofertas">
-                    <p class="descuento">Lo mas nuevo</p>
-                    <div class="texto-imagen">
-                        <div class="img-nueva">
+            <aside class="novedades">
+                    <h3 class="novedades__titulo">Lo mas nuevo</h3>
+                    <div class="novedades__diseños">
+                        <div class="novedades__imagen">
                             <img src="img/diseño11.jpeg" alt="Collage de aniversario">
-                           <p>Collage de Aniversario</p>
+                            <p class="novedades__nombre">Collage de Aniversario</p>
                         </div>
 
-                        <div class="img-nueva">
+                        <div class="novedades__imagen">
                             <img src="img/diseño9.jpeg" alt="Mapa etelar con fase lunar">
-                            <p>Mapa Estelar Corazon Con Fase Lunar</p>
+                            <p class="novedades__nombre">Mapa Estelar Corazon Con Fase Lunar</p>
                         </div>
 
-                        <div class="img-nueva">
+                        <div class="novedades__imagen">
                             <img src="img/diseño8.jpeg" alt="Mapa estelar corazon con efecto acuarela">
-                            <p>Mapa Estelar Corazon Efecto Acuarela</p>
+                            <p class="novedades__nombre">Mapa Estelar Corazon Efecto Acuarela</p>
                         </div>
 
-                        <div class="img-nueva">
+                        <div class="novedades__imagen">
                             <img src="img/diseño10.jpeg" alt="mapa estelar circular con arco floral">
-                            <p>Mapa Estelar Circular Con Arco Floral</p>
+                            <p class="novedades__nombre">Mapa Estelar Circular Con Arco Floral</p>
                         </div>
                     </div>
-                </div>
             </aside>
 
             <article>
-                <div class="ofertas img-descuento"> <!--la clase img-descuento sirve como selector padre para aplicar un displya none al h3 de descuento y que no se aplique al h3 del cupon; y tambien para aplicarle un background a la imagen-->
-                    <h3 class="descuento"> DESCUENTO </h3>
-                    <img src="img/descuento1.gif" alt="descuento"> 
-                </div>
+                <h3 class="novedades__titulo novedades__titulo--color"> DESCUENTO </h3>
+                <img src="img/descuento.gif" alt="descuento"> 
     
-                <div class="cupon ofertas">
-                    <h3 class="descuento">cupón</h3>
-                    <p class="texto-descuento">Las primeras 5 personas que compren por medio de este cupón se les dara  <span> 20% de descuento</span></p>
-                    <p class="texto-descuento">Precio Normal : <span>500C$</span></p>
-                    <p class="texto-descuento"> -20% : <span>400C$</span></p>
+                <div class="cupon">
+                    <h3 class="cupon__titulo">cupón</h3>
+                    <p class="cupon__texto">Las primeras 5 personas que compren por medio de este cupón se les dara  <span> 20% de descuento</span></p>
+                    <p class="cupon__texto">Precio Normal : <span>500C$</span></p>
+                    <p class="cupon__texto"> -20% : <span>400C$</span></p>
                     <div class="btn-cupon">
                         <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20hacer%20valido%20el%20cupon%20cuyo%20codigo%20es%20124865!" class="btn btn-primario">Canjear cupón</a>
                     </div>
@@ -88,11 +85,11 @@
         </div>
     </div>
 
-    <section class=" informacion seccion">
+    <section class="informacion seccion">
         <div class="contenedor ">
-            <h3 class="encabezado-info">¿QUE ES UN <span>MAPA ESTELAR?</span></h3> 
+            <h3 class="informacion__titulo">¿QUE ES UN <span>MAPA ESTELAR?</span></h3> 
             
-            <p class="texto-info">Un mapa estelar es una imágen de cómo se ve el cielo nocturno. Un mapa estelar se diseña a partir
+            <p class="informacion__texto">Un mapa estelar es una imágen de cómo se ve el cielo nocturno. Un mapa estelar se diseña a partir
                  de datos recolectados por alguien (normalmente astronomos) que se... </p> 
             <a href="blog.html" class="btn btn-primario">Leer mas...</a>
         </div>
@@ -102,15 +99,13 @@
         <h2>Diseños en ventas</h2>
 
         <div class="contenedor-diseños">
-
             <div class="diseños">
                 <img src="img/diseño1.jpg" alt="Diseño 1">
 
                 <div class="contenido-diseño">
-                    <h3>Mapa Estelar Circular Con Foto</h3>
-                    <p class="precio"><span>Precio Normal: </span> C$500 + Delivery</p>
-                    <p class="precio"><span>-10% de Descuento:</span> C$450 + Delivery</p>
-                    <p class="precio"><span>Fondos disponibles:</span> Blanco y Negro</p>
+                    <p class="contenido-diseño__titulo">Mapa Estelar Circular Con Foto</p>
+                    <p class="contenido-diseño__precio">Precio Normal:  <span>C$500 + Delivery</span></p>
+                    <p class="contenido-diseño__precio">-10% de Descuento: <span>C$450 + Delivery</span></p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -136,10 +131,9 @@
                 <img src="img/diseño2.jpeg" alt="Diseño 2">
 
                 <div class="contenido-diseño">
-                    <h3>Mapa Estelar corazón</h3>
-                    <p class="precio"><span>Precio Normal: </span> C$500 + Delivery</p>
-                    <p class="precio"><span>-10% de Descuento:</span> C$450 + Delivery</p>
-                    <p class="precio"><span>Fondos disponibles:</span> Blanco y Negro</p>
+                    <p class="contenido-diseño__titulo">Mapa Estelar corazón</p>
+                    <p class="contenido-diseño__precio"> Precio Normal: <span>C$500 + Delivery</span></p>
+                    <p class="contenido-diseño__precio">-10% de Descuento: <span>C$450 + Delivery</span></p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -158,19 +152,17 @@
                         </li>
                     </ul>
 
-                    <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20encargar%20el%20diseño%203" class="btn btn-primario d-block">encargar <i class="fab fa-whatsapp wha" aria-hidden="true"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20encargar%20el%20diseño%203" class="btn btn-primario d-block">Encargar <i class="fab fa-whatsapp wha" aria-hidden="true"></i></a>
                 </div>
             </div>
 
             <div class="diseños">
-                <img src="img/diseño3.jpg" alt="Diseño 3">
+                <img src="img/diseño3.jpeg" alt="Diseño 3">
 
                 <div class="contenido-diseño">
-                    <h3>Playlist De Spotify</h3>
-                    <p class="precio"><span>Precio Normal: </span> C$500 + Delivery</p>
-                    <p class="precio"><span>-10% de Descuento:</span> C$450 + Delivery</p>
-                    <p class="precio"><span>Fondos disponibles:</span> Blanco y Negro</p>
-    
+                    <p class="contenido-diseño__titulo">Playlist De Spotify</p>
+                    <p class="contenido-diseño__precio"> Precio Normal: <span>C$500 + Delivery</span></p>
+                    <p class="contenido-diseño__precio">-10% de Descuento: <span>C$450 + Delivery</span></p>
 
                     <ul class="iconos-caracteristicas">
                         <li>
@@ -178,20 +170,20 @@
                             <p>1</p>
                         </li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20encargar%20el%20diseño%205" class="btn btn-primario d-block">encargar <i class="fab fa-whatsapp wha" aria-hidden="true"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20encargar%20el%20diseño%205" class="btn btn-primario d-block">Encargar <i class="fab fa-whatsapp wha" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
 
             <div class="ver-todos">
-                <a href="diseños.html" class="btn btn-secundario d-block">Ver Todas</a>
+                <a href="diseños.html" class="btn btn-secundario d-block">mas diseños <i class="far fa-eye" aria-hidden="true"></i></a>
             </div>
     </main>
     
     <section class="imagen-contacto">
         <div class="contenedor contenido-contacto">
-            <h2>Encuentra el diseño perfecto</h2>
-            <p>Escribenos a nuestro whatsapp para consultar o encargar.</p>
+            <h3 class="contenido-contacto__titulo">Encuentra el diseño perfecto</h3>
+            <p class="contenido-contacto__texto">Escribenos a nuestro whatsapp para consultar o encargar.</p>
             <a href="https://api.whatsapp.com/send?phone=50586974870&text=Hola!%20Quiero%20contactarme%20con%20ustedes!" class="btn btn-primario">Contactar</a>
         </div>
     </section>
@@ -202,19 +194,28 @@
 
             <div class="testimonial">
                 <img src="img/testimonial1.jpeg" alt="imagen testimonial">
-                <p>"Me gusta como quedó, muchas gracias bro esta caballada."</p>
+                <p class="testimonial__texto">"Me gusta como quedó, muchas gracias bro esta caballada."</p>
                     <div class="usuario">
                         <img src="img/usuario2.png" alt="Usuario">
-                        <h3>Marlon Paiz</h3>
+                        <h3 class="usuario__nombre">Marlon Paiz</h3>
+                    </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="img/testimonial37.jpeg" alt="imagen testimonial">
+                <p class="testimonial__texto">"Estoy totalmente enamorada con este lindo detalle, mil gracias, te luciste."</p>
+                    <div class="usuario">
+                        <img src="img/usuario1.jpg" alt="Usuario">
+                        <h3 class="usuario__nombre">Marcela Carcamo</h3>
                     </div>
             </div>
 
             <div class="testimonial">
                 <img src="img/testimonial2.jpeg" alt="imagen testimonial">
-                <p>"Wow quedo super lindo, enserio que me encanto."</p>
+                <p class="testimonial__texto">"Wow quedo super lindo, enserio que me encanto."</p>
                     <div class="usuario">
                         <img src="img/usuario1.jpg" alt="Usuario">
-                        <h3>Genesis Espinoza</h3>
+                        <h3 class="usuario__nombre">Genesis Espinoza</h3>
                     </div>
             </div>
         </div>

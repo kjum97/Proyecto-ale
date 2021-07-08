@@ -1,8 +1,8 @@
 :root{ 
   --primario: skyblue;
   --secundario: white;
-  --fuenteprincipal:'Dancing Script', cursive;
-  --fuentesecundaria:'PT Sans', sans-serif;
+  --fuenteprincipal:'Newsreader', serif;
+  --fuentesecundaria:'PT Sans', sans-serif; 
 }
 
 html{
@@ -47,21 +47,34 @@ body{
   margin-top: 30px;
 }
 
-.clearfix::after{
-  content:'';
-  clear: both;
-  display: block;
+.bg-white{
+  background-color: white;
 }
-
+h1{
+  font-size: 3.4rem;
+}
 h2{
+  font-size: 2.8rem;
+}
+h3{
+  font-size: 2.4rem;
+}
+h1, h2{
   margin-top: 0px;
   text-align: center;
   text-transform: uppercase;
   color: white;
-  font-size: 2.5rem;
   font-family: var(--fuenteprincipal)
 }
 
+h2::after {
+  content: '';
+  margin: 5px auto 0px auto;
+  background-color: #FA6894;
+  height: 2px;
+  width: 100px;
+  display: block;
+}
  /****BOTONES****/
 .btn{
   display: block;
@@ -90,7 +103,11 @@ h2{
 .btn-primario{
   background-color: skyblue;
 }
-
+.btn-primario:hover,
+.btn-secundario:hover{
+  background-color: #FA6894;
+  transition: .70s;
+}
 .btn-secundario{
   background-color: white;
   color: #000000;
@@ -111,7 +128,6 @@ h2{
     padding: 10px 0 15px 0;
     margin-top: 0px;
   }
-
   .site-header.inicio{
       background-image: url(../img/header1.jpg);
       background-position: center center;
@@ -120,6 +136,32 @@ h2{
       height: 100vh;
       min-height: 600px;
   }
+
+/****Texto-HEADER***/
+.texto-header{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 4.5rem;
+}
+
+.texto-header__titulo{
+  text-transform: unset;
+  line-height: 1;
+  font-family: var(--fuentesecundaria);
+}
+.texto-header__informacion{
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+@media(min-width:786px){
+  .texto-header{
+      margin-top: 15rem;
+  }
+  .texto-header__informacion{
+    font-size: 2.8rem;
+    margin-top: 10px;
+  }
+}
 
   .barra{
       padding-top: 50px;
@@ -138,20 +180,8 @@ h2{
         padding-top: 15px;
     }
   }
+  /*AQUI TERMINA EL CSS DEL HEADER*/
 
-  /*Barra de navegacion 2, la tienen las demas paginas del sitio web y es la barra negra con los enlaces y el nombre del emprendimiento*/
-  .pagina2 .barra{
-    padding-top: 0px;
-    margin: 0px;
-  }
-  .barra a{
-    text-decoration: none;
-  }
-  .barra a img{
-    margin-top: 10px;
-  }
- 
-  
   /*NAVEGACION*/
   .navegacion a{
     color: white;
@@ -181,53 +211,14 @@ h2{
             color:skyblue;
     }
   }
-
-/****Texto-HEADER***/
-.texto-header{
-  text-align: center;
-  color: #ffffff;
-  margin-top: 4.5rem;
-}
-
-.texto-header h2{
-  text-transform: unset;
-  font-size: 3.4rem;
-  line-height: 1;
-  font-family: var(--fuentesecundaria);
-}
-
-.texto-header p{
-  font-size: 2.5rem;
-  margin-top: 20px;
-}
-
-@media(min-width:786px){
-  .texto-header{
-      margin-top: 15rem;
-  }
-  .texto-header p{
-    font-size: 2.8rem;
-    margin-top: 10px;
-  }
-}
-
-/****intro***/
-.intro .encabezado-info{
-  color: skyblue;
-  padding-top: 10px;
-  text-align: center;
-}
-.intro .texto-info{
-  padding-bottom: 0px;
-  margin-bottom: 8px;
-}
+  /*AQUI TERMINA EL CSS DE NAVEGACION*/
 
 /*Porporciones del sidebar*/
 
 @media(min-width: 768px){
   .sidebar{
       display: grid;
-      grid-template-columns: 70% 30%;
+      grid-template-columns: 2fr 1fr;
       column-gap: 2rem;
     }
     aside{
@@ -241,7 +232,66 @@ h2{
     }
   }
 
-/****article oferta y cupon****/
+/*Aside Novedades*/
+.novedades{
+  background-color: var(--secundario);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.novedades__titulo{
+  color: var(--primario);
+  font-family: var(--fuenteprincipal);
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  padding: 20px 0px 0px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+} 
+.novedades__imagen img{
+  display: inline-block;
+  height: 450px;
+  width: 100%;
+  margin-top: 5px;
+}
+.novedades__nombre{
+  text-align: center;
+  color: var(--primario);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 5px 10px 5px;
+}
+.novedades__titulo--color{
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+@media(min-width:768px){
+  .novedades__titulo--color{
+    display: none;
+  }
+}
+.novedades__nombre:last-of-type{
+  padding-bottom: 10px;
+}
+@media(min-width:768px){
+  .novedades__imagen img{
+    height: 330px;
+    margin-top: 10px;
+    width: 85%;
+    padding: 0px 5px;
+  }
+  .novedades__nombre{
+    text-align: center;
+  }
+  
+  .novedades__diseños{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+}
+/****article: descuento y cupon****/
 article{
   margin-top: 40px;
 }
@@ -250,69 +300,37 @@ article{
     margin-top: 0px;
   }
 }
-.ofertas{
-  background-color: var(--secundario);
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
 
 .cupon{
-  border:5px solid coral;
+  color:#FA6894;
+  border:5px solid #FA6894;
+  border-radius: 5%;
   margin-top: 10px;
+  background-color: white;
 }
 @media(min-width: 768px){
   .cupon{
     margin-top: 30px;
   }
 }
-.cupon .descuento{
-  color: coral;
+.cupon__titulo{
+    font-family: var(--fuenteprincipal);
+    font-size: 4rem;
+    text-align: center;
+    margin: 5px 10px 10px 10px;
+    padding-top: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-.cupon .texto-descuento2 span{
-  color: coral;
-}
-
-@media(min-width:786px){
-  .productoNuevo .descuento{
-    padding: 10px 0px 0px 0px;
-  }
-}
-
-.descuento{
-  color: var(--primario);
-  font-family: var(--fuenteprincipal);
-  font-size: 4rem;
-  text-align: center;
-  margin: 0px 10px 10px 10px;
-  padding-top: 8px;
-  font-weight: bold;
-  text-transform: uppercase;
-} 
-.img-descuento{
-  background-color: white;
-}
-@media(min-width:786px){
-  .img-descuento{
-    background-color: black;
-  }
-  .img-descuento .descuento{
-    display: none;
-    font-size: 4.2rem;
-  }
-}
-.img-descuento video{
-  width: 100%;
-}
-
-.texto-descuento{
+.cupon__texto{
   margin: 10px 8px 0px 8px;
   color: black;
   font-size: 2rem;
   text-align: center;
   line-height: 1.7;
 }
-.texto-descuento span{
-  color: coral;
+.cupon__texto span{
+  color: #FA6894;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -320,11 +338,11 @@ article{
 .btn-cupon{
   text-align: center;
   margin: 20px 7px;
+  border-radius: 10%;
 }
 .btn-cupon a{
   display: inline;
-  border-radius: 1%;
-  background-color: coral;
+  background-color: #FA6894;
   color: white;
   margin-bottom: 5px;
 }
@@ -338,50 +356,12 @@ article{
   }
 }
 
-/*Aside Novedades*/
-.img-nueva img{
-  display: inline-block;
-  height: 450px;
-  width: 100%;
-  margin-top: 5px;
-}
-.img-nueva a{
-  text-decoration: none;
-}
-.img-nueva p{
-  text-align: center;
-  color: var(--primario);
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 11px;
-  margin-top: 12px;
-}
-@media(min-width:768px){
-  .img-nueva img{
-    height: 330px;
-    margin-top: 10px;
-    width: 85%;
-    padding: 0px 5px;
-  }
-  .img-nueva p{
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  .texto-imagen{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-}
-}
-  
-/*INFORMACION DEL MAPA*/
-
+/*INFORMACION DEL MAPA PARA IR A BLOG*/
 .informacion{
   background-color: var(--secundario);
   margin-bottom: 10px;
 }
-.encabezado-info{
+.informacion__titulo{
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -393,7 +373,7 @@ article{
   margin: 0px;
 }
 
-.encabezado-info span{
+.informacion__titulo span{
   display: block;
   font-size: 2.8rem;
   font-family: var(--fuenteprincipal);
@@ -402,32 +382,32 @@ article{
 }
 
 @media(min-width:786px){
-.encabezado-info{
+.informacion__titulo{
  text-align: left;
  font-size: 5rem;
 }
 
-.encabezado-info span{
+.informacion__titulo span{
  text-align: left;
  margin: 0px 0px 0px 50px;
  font-size: 3.8rem;
 }
 }
 
-.texto-info{
+.informacion__texto{
   font-size: 2rem;
   text-align: justify;
   padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 0px;
   line-height: 2;
 }
+/*AQUI CIERRA EL CSS DE INFORMACION PARA IR A BLOG*/
 
 /****MAIN DISEÑOS****/
-
 @media(min-width:768px){
   .contenedor-diseños{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
 }
 }
 
@@ -440,7 +420,7 @@ article{
 }
 @media(min-width:768px){
 .diseños:hover{
-  transform: scale(1.1);
+  transform: scale(1.03);
   border: 2px solid var(--primario);
   box-shadow: 0px 0px 50px #666;
 }
@@ -448,43 +428,37 @@ article{
 
 .diseños img{
   display: inline-block;
-  height: 430px;
-  width: 500px;
+  height: 400px;
+  width:100%;
 }
-
 @media(min-width:768px){
-  .diseños{
-      flex: 0 0 calc(33.3% - 1.8rem);
-}
 .diseños img{
-  display: inline-block;
   height: 350px;
-  width: 400px;
+  padding: 0;
 }
 }
 
 .contenido-diseño{
   padding: 20px 20px 10px 20px;
 }
-.contenido-diseño h3{
+.contenido-diseño__titulo{
   margin: 0px;
   font-size: 1.8rem;
+  font-weight: bold;
 }
-.contenido-diseño p{
+.contenido-diseño__precio{
   margin: 10px 0px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.8;
   text-align: justify;
+  color: #000000;
+  font-weight: bold;
 }
 
-p.precio{
-  color: var(--primario);
-  font-weight: bold;
+.contenido-diseño__precio span{
+  color: skyblue;
   font-size: 20px;
-}
-.precio span{
-  color: black;
-  font-size: 18px;
+  font-weight: bold;
 }
 
 .iconos-caracteristicas{
@@ -501,9 +475,9 @@ p.precio{
 }
 .iconos-caracteristicas li img{
   display: block;
-  width: 26px;
-  height: 30px;
-  margin-top: 13px;
+  width: 33px;
+  height: 24px;
+  margin-top: 16px;
   margin-right: 10px;
   
 }
@@ -513,8 +487,9 @@ p.precio{
 }
 .iconos-caracteristicas li p i{
   color: skyblue;
-  font-size: 1.8rem;
+  font-size: 2.6;
 }
+/*AQUI CIERRA EL CSS DE LOS DISEÑOS*/
 
 /*****CONTACTO*****/
 .imagen-contacto{
@@ -530,24 +505,24 @@ p.precio{
   flex: 0 0 95%;
   color: #ffffff;
 }
-.contenido-contacto p{
+.contenido-contacto__texto{
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
   line-height: 2;
 }
-.contenido-contacto h2{
+.contenido-contacto__titulo{
   font-size: 2.6rem;
   font-family: var(--fuentesecundaria);
   text-align: left;
 }
+/*AQUI CIERRA EL CSS DE CONTACTO*/
 
 /****TESTIMONIALES*****/
-
 @media(min-width:768px){
   .testimoniales{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 4.6rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
   }
 }
 
@@ -556,9 +531,9 @@ p.precio{
   border-color: grey;
   border-width: 1px;
   background: #F5F5F5;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-.testimonial p{
+.testimonial__texto{
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
   line-height: 1.6;
@@ -569,11 +544,11 @@ p.precio{
 .testimonial img{
     display: inline-block;
     height: 400px;
-    width: 550px; 
+    width: 100%; 
 }
 @media(min-width:768px){
   .testimonial img{
-    height: 500px;
+    height: 400px;
 }
 .testimonial p{
   text-align: justify;
@@ -584,8 +559,7 @@ p.precio{
   display: flex;
   justify-content: center;
   background-color:black;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px -1px -1px -1px;
   align-items: center;
 }
 .usuario img{
@@ -597,13 +571,14 @@ p.precio{
     margin-right: 20px;
 }
 
-.usuario h3{
+.usuario__nombre{
   color: var(--primario);
   font-size: 2rem;
   font-family: var(--fuentesecundaria);
   text-align: center;
   padding: 8px 5px 8px 0px;
 }
+/*AQUI CIERRA EL CSS PARA LOS TESTIMONIALES*/
 
 /****FOOTER****/
 .site-footer{
@@ -673,166 +648,199 @@ footer .redes a{
 .wha{
   color: green;
 }
+/*AQUI CIERRA EL CSS DE TODO EL FOOTER*/
 
-/****PAGINA BLOG QUE ES MAPA ESTELAR****/
-main .contenedor{
+
+/****PAGINA BLOG****/
+.contenedor__blog{
     width: 95%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
-main .contenedor p{
-  padding-left: 10px;
-  padding-right: 10px;
+@media(min-width:768px){
+  .blog{
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .blog__imagen{
+    flex-basis: calc(33.3% - 1rem);
+  }
+  .blog__informacion{
+    flex-basis: calc(66.6% - 1rem);
+  }
 }
-main .informacion{
+
+.blog__imagen img{
+  display: block;
+  width: 100%;
+  height:350px;
+}
+@media(min-width:768px){
+  .blog__imagen img{
+    height:250px;
+  }
+}
+
+.blog__titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 5px;
+    line-height: 0.8;
+}
+@media(min-width:768px){
+  .blog__titulo{
+    margin: 12px 5px;
+  }
+}
+
+.blog__titulo::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: var(--primario);
+    margin-top: 10px;
+}
+.blog__texto{
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 10px;
+  text-align: justify;
+}
+.blog__texto span{
+  color: var(--primario);
+  font-weight: bold;
+}
+.blog__enlace.btn{
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  margin: 15px 10px;
+}
+
+.sombra{
   border: 2px solid skyblue;
   border-radius: 5px;
   -webkit-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
   -moz-box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
   box-shadow: 0px 10px 21px 0px rgba(0,0,0,0.74);
 }
-main .encabezado-info{
-  margin-left: 12px;
+/*AQUI CIERRA EL CSS DE LA PAGINA BLOG*/
+
+/*ENTRADAS DE BLOG*/
+.resumen__encabezado{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.resumen__precio{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.iconos-caracteristicas__blog{
+margin: 0 auto;
+align-items: center;
+}
+.iconos-caracteristicas__blog li p i{
+  color: white;
+  font-size: 24px;
+}
+.iconos-caracteristicas__blog li img{
+  width: 50px;
+}
+.iconos-caracteristicas__blog li p:last-of-type{
+  margin-right: 0px;
 }
 
-.constelacion .texto-info{
-  margin-top: 5px;
-}
-
-.informacion img{
-  width: 100%;
-}
-@media(min-width:786px){
-  .informacion img{
-      display: block;
-      width: 300px;
-      float: left;
-      margin: 10px 10px 0 0;
-      padding: 0px 10px;
-  }
-}
-
-.informacion ul{
-  padding-left: 50px;
-}
-.informacion ul li{
-  font-size: 2rem;
+.resumen__texto{
+  font-size: 1.8rem;
+  color: white;
   line-height: 2;
   text-align: justify;
-  padding-top: 0px; padding-right: 5px; padding-left: 5px; padding-bottom: 0px;
+}
+
+.video{
+  margin-bottom: 30px;
+}
+.video iframe{
+ text-align: center;
+ margin: 0px;
+ width: 100%;
+ height: 250px;
 }
 @media(min-width:786px){
-  .informacion ul{
-    padding-left: 100px;
+  .video iframe{
+    height: 350px;
   }
 }
 
-.qr .texto-info{
-  margin-top: 0px;
+.resumen__lista h2{
+  margin-top: 30px; margin-bottom: 10px;
 }
-.qr img{
-  width: 100%;
+.resumen__lista h2::after{
+  content: unset;
+  background-image: unset;
 }
-@media(min-width:786px){
-  .qr img{
-    display: block;
-    width: 300px;
-    height: 190px;
-  }
-}
-
-.img-spotify .texto-info{
-  margin-top: 0px;
-}
-.img-spotify img{
-width: 100%;
-}
-@media(min-width:786px){
-  .img-spotify img{
-    display: block;
-    width: 310px;
-    height: 140px;
-  }
+.resumen__lista li{
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0px 5px; 
+  color: white;
 }
 
-/*PAGINA NOSOTROS*/
-.mas-nosotros .iconos-nosotros{ 
-  display: block;
+.img-entrada{
+  text-align: center;
+  margin: 0px 0px 10px 0px;
 }
-@media(min-width:786px){
-  .mas-nosotros .iconos-nosotros{
-    display: flex;
-  }
-}
-/*El selector mas-nosotros solo sirve para generar un elemento padre y cambiarle el display a conoce mas sobre
-  nosotros ya que en movil quiero que enn la pagina Blog se oculte pero en la pagina nosotros si se muetre. y cuando
-  este en computadora que se muestre en las 2 paginas*/
+/*AQUI CIERRA EL CSS DE LAS ENTRADAS DE BLOG*/
 
-.img-nosotros img{
-  height: 470px;
-  width: 100%;
-}
+/******PAGINA NOSOTROS*****/
 @media(min-width:786px){
   .contenido-nosotros{
-    display: flex;
-    justify-content: space-between;
-  }
-  .flex-img{
-    flex-basis:calc(35% - 1rem);
-  }
-  .flex-texto{
-    flex-basis: calc(65% - 1rem);
-  }
-
-  .img-nosotros img{
-    display: inline-block;
-    height: 580px;
-    width: 500px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 2rem;
   }
 }
-.texto-nosotros blockquote{
+.contenido-nosotros__encabezado{
   font-weight: 900;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
+  font-family: var(--fuenteprincipal);
   margin: 15px 0px 0px 0px;
   text-align: center;
 }
 @media(min-width:786px){
-  .texto-nosotros blockquote{
-    margin: 0px;
+  .contenido-nosotros__encabezado{
+    margin: 0;
   }
 }
-
-.texto-nosotros p{
-  font-size: 1.9rem;
+.contenido-nosotros__texto{
+  font-size: 1.8rem;
   text-align: justify;
   line-height: 1.8;
 }
+
 /*iconos nosotros*/
-.icono{
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-bottom: 12px;
-}
 .icono img{
   display: inline-block;
   height: 100px;
   width: auto;
   padding-top: 10px;
 }
-.icono h3{
+.icono__encabezado{
   font-size: 2rem;
-  font-family: var(--fuentesecundaria);
+  font-family: var(--fuenteprincipal);
   font-weight: bold;
   text-transform: uppercase;
 }
-.icono p{
+.icono__texto{
   font-size: 1.8rem;
   text-align: center;
   line-height: 1.6;
 }
-.iconos-nosotros{
-  display: none;
-}
+
 @media(min-width:768px){
   .icono{
     margin-bottom: 0px;
@@ -851,7 +859,7 @@ width: 100%;
     flex-basis: calc(33.3% - 1rem);
   }
 }
-
+/******AQUI CIERRA LA PAGINA NOSOTROS****/
 
 /*PAGINA TESTIMONIALES*/
 main .testimoniales{
