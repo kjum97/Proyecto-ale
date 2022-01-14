@@ -431,12 +431,6 @@ article{
   height: 400px;
   width:100%;
 }
-@media(min-width:768px){
-.diseños img{
-  height: 350px;
-  padding: 0;
-}
-}
 
 .contenido-diseño{
   padding: 20px 20px 10px 20px;
